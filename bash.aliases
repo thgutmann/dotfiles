@@ -1,0 +1,19 @@
+# some nifty aliases for bash
+alias ls='ls -FG'
+alias l='ls -l'
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lr='ls -l --sort=size --reverse'
+alias dir='ls -l'
+alias lo='logout'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias rmold='rm -f *~ .[a-zA-Z0-9]*~'
+
+# cd function
+function cd() {
+	builtin cd $@
+	test -f .message && cat .message
+}
+
