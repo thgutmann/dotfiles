@@ -17,3 +17,14 @@ function cd() {
 	test -f .message && cat .message
 }
 
+#
+# git stuff
+#
+
+# push and copy commit hash to the clipboard
+alias gplh='git push && git show head | head -1 | cut -d " " -f 2 | tr -d "\n" | pbcopy'
+
+# git new branch and set origin as upstream
+function gnb () {
+    git checkout -b "$@" && git push --set-upstream origin "$@"
+}
