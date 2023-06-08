@@ -1,0 +1,3 @@
+# some missing aliases for zsh
+alias lo='logout'
+alias rmold='rm -f *~ .[a-zA-Z0-9]*~'
