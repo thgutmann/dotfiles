@@ -15,7 +15,7 @@
 # Use the command 'task show' to see all defaults and overrides
 
 # Files
-data.location=/Users/ted/.task
+data.location=$HOME/.task
 
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
@@ -44,7 +44,6 @@ news.version=2.6.0
 
 context.home.read=project:Home
 context.home.write=project:Home
-context=home
 context.work.read=project:Work
 context.work.write=project:Work
 
