@@ -28,6 +28,3 @@ alias gplh='git push && git show head | head -1 | cut -d " " -f 2 | tr -d "\n" |
 function gnb () {
     git checkout -b "$@" && git push --set-upstream origin "$@"
 }
-
-# vpn connection to zhdk
-alias vpnzhdk='sudo openconnect -u tgutman2 vpn1.zhdk.ch'
